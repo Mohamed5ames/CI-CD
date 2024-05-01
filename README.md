@@ -20,6 +20,7 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
 ### Note: Port 8080 must be opened in your VM's firewall or Add a rule to allow incoming connections on port 8080 to EC2
+### Browse to http://localhost:8080 to open Jenkins
 ## Step 2: Install GIT
 ```bash
 yum install git
@@ -51,20 +52,25 @@ pipeline {
           }
          }
 ```
-## Step 3 : Install git flow
+## Step 4 : Install git flow
 ```bash
 git clone -b feature/https-remote https://github.com/jgonggrijp/gitflow.git
 curl -OL https://raw.github.com/jgonggrijp/gitflow/develop/contrib/git flow-installer.sh
 chmod +x gitflow-installer.sh
 sudo ./gitflow-installer.sh
 ```
-### Step 3.1 : Make sure You installed git flow by Initializing Git Flow in your repository with default branch names.
+### Step 4.1 : Make sure You installed git flow by Initializing Git Flow in your repository with default branch names.
 ```bash
 git flow init
 ```
 ![git flow](https://github.com/Mohamed5ames/CI-CD/assets/50241889/805fcdea-1203-4fdd-a941-7acc7f44416d)
 
-### Step 4 : Generate SSH Key
+### Step 5 : Generate SSH Key
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
+#### - add public key to your GitHub repo 
+- copy your public key
+- open your repo then go to settings and open deploy keys in the left panel and add it
+- check allows write access to gain permissions to push develop branch
+  
