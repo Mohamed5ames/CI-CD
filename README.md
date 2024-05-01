@@ -19,4 +19,8 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
-### Note: Port 8080 must be opened in your machine 
+### Note: Port 8080 must be opened in your VM's firewall or Add a rule to allow incoming connections on port 8080 to EC2
+## Step 2: Install GIT
+```bash
+yum install git
+```
