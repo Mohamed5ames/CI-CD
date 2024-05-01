@@ -36,6 +36,21 @@ master (or main) for stable releases
   - press add rule button and put your branch main (production) branch in Branch name pattern
   - check "Require a pull request before merging"
   - then press create
+## Step 3 : Add Jenkins File
+Add a Jenkinsfile to your repository in the root directory. Start with a
+simple pipeline
+```bash
+pipeline {
+ agent any
+   stages {
+      stage('build') {
+        steps {
+           echo "Hello World!"
+              }
+                    }
+          }
+         }
+```
 ## Step 3 : Install git flow
 ```bash
 git clone -b feature/https-remote https://github.com/jgonggrijp/gitflow.git
