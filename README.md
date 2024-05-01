@@ -13,7 +13,7 @@ sudo dnf install fontconfig java-17-openjdk
 sudo dnf install jenkins
 sudo systemctl daemon-reload
 ```
-  - ### Step 1.1 : Start Jenkins
+        - ### Step 1.1 : Start Jenkins
 ```bash
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
