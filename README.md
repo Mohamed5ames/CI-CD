@@ -25,6 +25,17 @@ sudo systemctl status jenkins
 yum install git
 git --version
 ```
+### Step 2.1 : Prepare your repo
+- Create a new GitHub repository or select an existing one.
+- Initialize the repository with a README.md, and ensure the repository contains at least two branches:
+develop for ongoing development.
+master (or main) for stable releases
+- add branch protection rules to main branch
+  - open your repo
+  - from setting open Branchs
+  - press add rule button and put your branch main (production) branch in Branch name pattern
+  - check "Require a pull request before merging"
+  - then press create
 ## Step 3 : Install git flow
 ```bash
 git clone -b feature/https-remote https://github.com/jgonggrijp/gitflow.git
