@@ -49,3 +49,7 @@ git flow init
 ```
 ![git flow](https://github.com/Mohamed5ames/CI-CD/assets/50241889/805fcdea-1203-4fdd-a941-7acc7f44416d)
 
+### Step 4 : Generate SSH Key
+```bash
+ssh-keygen -t rsa -b 4096
+```
