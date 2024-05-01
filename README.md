@@ -46,3 +46,6 @@ sudo ./gitflow-installer.sh
 ### Step 3.1 : Make sure You installed git flow by Initializing Git Flow in your repository with default branch names.
 ```bash
 git flow init
+```
+![git flow](https://github.com/Mohamed5ames/CI-CD/assets/50241889/805fcdea-1203-4fdd-a941-7acc7f44416d)
+
