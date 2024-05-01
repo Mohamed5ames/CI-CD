@@ -19,3 +19,4 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
+### Note: Port 8080 must be opened in your machine 
