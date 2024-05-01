@@ -69,7 +69,7 @@ git flow init
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
-#### - add public key to your GitHub repo 
+####  add public key to your GitHub repo 
 - copy your public key
 - open your repo then go to settings and open deploy keys in the left panel and add it
 - check allows write access to gain permissions to push develop branch
