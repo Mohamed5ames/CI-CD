@@ -23,4 +23,15 @@ sudo systemctl status jenkins
 ## Step 2: Install GIT
 ```bash
 yum install git
+git --version
 ```
+## Step 3 : Install git flow
+```bash
+git clone -b feature/https-remote https://github.com/jgonggrijp/gitflow.git
+curl -OL https://raw.github.com/jgonggrijp/gitflow/develop/contrib/git flow-installer.sh
+chmod +x gitflow-installer.sh
+sudo ./gitflow-installer.sh
+```
+### Step 3.1 : Make sure You installed git flow by Initializing Git Flow in your repository with default branch names.
+```bash
+git flow init
