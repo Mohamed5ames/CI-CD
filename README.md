@@ -84,21 +84,21 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 - Link Jenkins to GitHub
 - Go to "Manage Jenkins" > "Manage Plugins" > "Available" and install "GitHub Integration Plugin".
 ### Step 6.1 : Configure Credentials
-- Go to "Manage Jenkins" > "Credentials" > "System" > "Global credentials (unrestricted)"
-- press on `Add Credentials` button 
-- choose `SSH Username and Private key` option from `kind` list
-- make `scope` is `Global`
-- fill `id` with name you want 
-- put your github username in `username` textbox
-- check `Enter directly`
-- insert your public ssh key after press `add` button
-- press `Create` button
+1. Go to "Manage Jenkins" > "Credentials" > "System" > "Global credentials (unrestricted)"
+2. press on `Add Credentials` button 
+3. choose `SSH Username and Private key` option from `kind` list
+4. make `scope` is `Global`
+5. fill `id` with name you want 
+6. put your github username in `username` textbox
+7. check `Enter directly`
+8. insert your public ssh key after press `add` button
+9. press `Create` button
 ### Step 6.2 : Create a new Pipeline
 
 1. Select "New Item" in Jenkins.
 2. Name your pipeline (e.g., "GitHub Pipeline") and choose "Pipeline" as the type.
 3. In the pipeline configuration, select "Pipeline script from SCM" and choose "Git" as the SCM.
-4. Enter the repository URL and credentials.
+4. Enter the repository URL and credentials id you insert in `step 6.1`.
 5. Specify the branch to build (e.g., */develop).
 ![Screenshot 2024-05-01 205246](https://github.com/Mohamed5ames/CI-CD/assets/50241889/498a5882-d7b0-4f00-8261-149b4cff799f)
 ![Screenshot 2024-05-01 205234](https://github.com/Mohamed5ames/CI-CD/assets/50241889/17ae7f8b-59d1-4044-9040-a50347c1147c)
