@@ -85,14 +85,14 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 - Go to "Manage Jenkins" > "Manage Plugins" > "Available" and install "GitHub Integration Plugin".
 ### Step 6.1 : Configure Credentials
 1. Go to "Manage Jenkins" > "Credentials" > "System" > "Global credentials (unrestricted)"
-2. press on `Add Credentials` button 
-3. choose `SSH Username and Private key` option from `kind` list
-4. make `scope` is `Global`
-5. fill `id` with name you want 
-6. put your github username in `username` textbox
-7. check `Enter directly`
-8. insert your public ssh key after press `add` button
-9. press `Create` button
+2. Press on `Add Credentials` button 
+3. Choose `SSH Username and Private key` option from `kind` list
+4. Make `scope` is `Global`
+5. Fill `id` with name you want 
+6. Put your github username in `username` textbox
+7. Check `Enter directly`
+8. Insert your public ssh key after press `add` button
+9. Press `Create` button
 ### Step 6.2 : Create a new Pipeline
 
 1. Select "New Item" in Jenkins.
