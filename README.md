@@ -1,6 +1,6 @@
 # CI-CD PIPELINE
 ## Running Pipeline Automatically with Jenkins on EC2 or VM
-Setting up Jenkins to run pipelines automatically on your server, whether it's an EC2 instance or a virtual machine, is straightforward. 
+Setting up Jenkins to run pipelines automatically on your server, whether it's an EC2 instance or a virtual machine,
 Follow these steps:
 ## Step 1: Install JavaJDK && Jenkins
 ```bash
