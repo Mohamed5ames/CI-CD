@@ -116,7 +116,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 1. Scroll down to the `Build Triggers` section in your pipeline job configuration.
 2. Check the box next to `Poll SCM`.
-3. In the "Schedule" field, enter the polling schedule using cron syntax. 
+3. In the `Schedule` field, enter the polling schedule using cron syntax. 
    For example, to poll every 5 minutes, you can use `H/5 * * * *`.
 ![Screenshot 2024-05-01 205224](https://github.com/Mohamed5ames/CI-CD/assets/50241889/f059fd94-1720-44b7-8e6e-e7d074719bd9)
 ### Step 7 :Testing and Validation
