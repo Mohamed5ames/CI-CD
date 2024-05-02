@@ -98,7 +98,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Select "New Item" in Jenkins.
 2. Name your pipeline (e.g., "GitHub Pipeline") and choose "Pipeline" as the type.
 3. In the pipeline configuration, select "Pipeline script from SCM" and choose "Git" as the SCM.
-4. Enter the repository URL and credentials id you insert in `step 6.1`.
+4. Enter the repository URL and credentials `id` you insert it in `step 6.1`.
 5. Specify the branch to build (e.g., */develop).
 ![Screenshot 2024-05-01 205246](https://github.com/Mohamed5ames/CI-CD/assets/50241889/498a5882-d7b0-4f00-8261-149b4cff799f)
 ![Screenshot 2024-05-01 205234](https://github.com/Mohamed5ames/CI-CD/assets/50241889/17ae7f8b-59d1-4044-9040-a50347c1147c)
