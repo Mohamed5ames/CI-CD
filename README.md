@@ -112,6 +112,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
    - Select "Just the push event".
    - Ensure the webhook is active.
 3. With the webhook, Jenkins will trigger a new build every time changes are pushed to the connected branch.
+   ![Screenshot 2024-05-02 030531](https://github.com/Mohamed5ames/CI-CD/assets/50241889/8bd9cc88-6447-4cb6-a0a1-19faf9d13f0f)
+
 ### Step 6.3 (`VM without accessable public ip`) : Implement scheduled trigger (Configure Jenkins to poll SCM for any changes)
 
 1. Scroll down to the `Build Triggers` section in your pipeline job configuration.
